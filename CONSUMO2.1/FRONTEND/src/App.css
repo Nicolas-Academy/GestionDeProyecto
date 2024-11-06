@@ -1,0 +1,146 @@
+/* src/App.css */
+
+/* Fondo de la aplicación */
+body {
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal de la aplicación */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+h1, h2 {
+  color: #333333;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+}
+
+/* Formulario */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Etiquetas de los campos */
+label {
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+/* Estilo de campos de entrada */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+}
+
+/* Botones */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Colores para botones */
+button[type="submit"] {
+  background-color: #28a745; /* Verde */
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button.cancel-button {
+  background-color: #dc3545; /* Rojo */
+}
+
+button.cancel-button:hover {
+  background-color: #c82333;
+}
+
+button.create-button {
+  background-color: #007bff; /* Azul */
+}
+
+button.create-button:hover {
+  background-color: #0069d9;
+}
+
+/* Centrando listas y elementos */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+}
+
+li {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de cada tarea */
+.task-title {
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.task-status {
+  color: #666666;
+}
+
+/* Estilo de los botones dentro de listas */
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
