@@ -1,0 +1,23 @@
+BACKEND
+├── config
+│   └── db.js                 # Configuración de la base de datos
+├── controllers
+│   ├── authController.js      # Controlador de autenticación
+│   ├── proyectoController.js  # Controlador de proyectos
+│   └── tareaController.js     # Controlador de tareas
+├── middleware
+│   ├── authMiddleware.js      # Middleware de autenticación
+│   └── errorMiddleware.js     # Middleware para el manejo de errores
+├── models
+│   ├── Proyecto.js            # Modelo de Proyecto
+│   ├── Tarea.js               # Modelo de Tarea
+│   └── Usuario.js             # Modelo de Usuario
+├── routes
+│   ├── authRoutes.js          # Rutas de autenticación
+│   ├── proyectoRoutes.js      # Rutas de proyectos
+│   └── tareaRoutes.js         # Rutas de tareas
+|
+├── .env                       # Variables de entorno
+├── .gitignore                 # Ignorar archivos innecesarios en Git
+├── package.json               # Archivo de configuración de npm
+└── server.js                  # Configuración del servidor y punto de entrada principal
